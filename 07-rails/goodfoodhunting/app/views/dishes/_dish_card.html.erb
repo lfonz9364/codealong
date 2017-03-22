@@ -1,0 +1,35 @@
+<div class="showcase">
+  <div class="header">
+    <img class="user image" src="<%= asset_path('icon.png') %>">
+    <p class="user">dt</p>
+    <p class="date">
+      <%= l dish.updated_at %>
+    </p>
+  </div>
+  <div class="dish-image">
+    <img src="<%= dish.image_url %>" alt="">
+  </div>
+  <div class="description">
+    <h1 class="dish name"><a href="/dishes/<%= dish.id %>"><%= dish.name %></a></h1>
+    <p class="dish body">
+      lorem ipsum karl superman insult greyhound black widow afraid hulk contestant bring money hello
+      jkorep popstar horee kbsh hungry always hug terre
+    </p>
+  </div>
+  <div class="comment">
+    <p>
+      <%= form_tag '/likes', method: 'post' do %>
+      <input type="hidden" name="dish_id" value="<%= dish.id %>">
+      <button>Like</button>
+      <% end %>
+    </p>
+    <p><%= dish.likes.count %></p>
+  </div>
+    <!-- <form action="/dishes" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input type="hidden" name="dish_id" value="<%= dish.id %>">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+      <button>Delete</button>
+    </form> -->
+</div>

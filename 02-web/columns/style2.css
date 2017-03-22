@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 0;
+}
+
+/* apply only to div inside div with class of wrapper */
+.wrapper div {
+  width: 50%;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+.float-wrapper div {
+  float: left;
+  width: 50%;
+}

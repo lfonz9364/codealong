@@ -1,0 +1,61 @@
+/* select id */
+#special {
+  background-color: plum;
+  display:none;/*remove the space left if using visibility*/
+}
+
+/*not display div*/
+/*opacity:0*/
+/*display: none;*/
+/*visibility:hidden;*/
+
+#less-special {
+  background-color: pink;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  width: 100px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  margin-bottom: 5px;
+}
+
+.position-static{
+  position: static;
+}
+
+.position-fixed { /* does not follow page flow */
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.position-relative { /*absolute inside relative will move the absolute box based on relative box*/
+  position: relative;
+  left: 40px;
+}
+
+.position-absolute { /*based on entire page and follow the page flow*/
+  position: absolute;
+  top: 185px;
+  left: 90px;
+  background-color: cyan;
+}
+
+.abs {
+  background-color: yellow;
+  position: absolute;
+  top: 40px;
+}
+
+.test {
+  background-color: pink;
+  position:absolute;
+  left: 20px;
+}

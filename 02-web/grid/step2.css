@@ -1,0 +1,31 @@
+body {
+  width: 80%; /* 600px */
+  margin: 0 auto;
+}
+
+.span-1,
+.span-2,
+.span-3 {
+  min-height: 100px;
+  float:left;
+  margin-right: 3.3333%; /*20px; 20px/600px = 0.033333*/
+}
+
+.span-1 {
+  background-color: mistyrose;
+  width: 30%; /* width =180px; 180px / 600px = 0.3 */
+}
+
+.span-2 {
+  background-color: linen;
+  width: 63.33333%; /* width = 380px; 380px / 600px = 0.633333 */
+}
+
+.span-3 {
+  background-color: plum;
+  width: 96.66666%; /* width = 580px; 580px / 600px = 0.966666666 */
+}
+
+img {
+  max-width: 100%;
+}

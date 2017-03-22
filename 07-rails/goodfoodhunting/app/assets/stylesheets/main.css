@@ -1,0 +1,59 @@
+.showcase {
+  float:left;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 2em;
+  width: 23%;
+  margin: 1%;
+  background-color: mistyrose;
+}
+
+p {
+  display:inline-block;
+}
+
+.image {
+  max-width: 10%;
+  vertical-align: middle;
+}
+
+.header {
+  margin: 20px;
+  width: 85%;
+  height: 20px;
+}
+
+.user {
+  float: left;
+  margin: 0 2px 0 2px;
+}
+
+.date {
+  float: right;
+}
+
+.description {
+  margin: 10px;
+}
+
+.name {
+  font-size: 2em;
+}
+
+.body {
+  width: 70%;
+}
+
+.comment {
+  margin: 10px;
+}
+
+.comment form {
+  display: inline;
+}
+
+.dish-image img{
+  width: 288px;
+  height:190px;
+}

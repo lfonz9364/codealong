@@ -1,0 +1,19 @@
+
+@leads
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>email</th>
+    <th>age</th>
+  </tr>
+  <% @leads.each do |lead| %>
+  <tr>
+    <td><%= lead["id"] %></td>
+    <td><%= lead["name"] %></td>
+    <td><%= lead["email"] %></td>
+    <td><%= lead["age"] %></td>
+  </tr>
+  <% end %>
+</table>

@@ -1,0 +1,5 @@
+<h2>list</h2>
+
+<% @dishes.each do |dish| %>
+  <%= render partial: 'dish_card', locals: { dish: dish } %>
+<% end %>

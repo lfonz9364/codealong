@@ -1,0 +1,20 @@
+<h1>my guest book</h1>
+
+<form action="/comments" method="post">
+  <label for="">name</label>
+  <input type="text" name="name">
+
+  <label for="">comment</label>
+  <textarea name="comment"></textarea>
+
+  <label for="">url</label>
+  <input type="text" name="url">
+  <button>post</button>
+</form>
+  <hr>
+  <% @comments.each do |comment| %>
+  <p><%= comment['name'] %></p>
+  <p><%= comment['body'] %></p>
+  <hr>
+  <% end %>
+</table>
