@@ -1,4 +1,4 @@
-<div class="showcase">
+<div class="showcase" data-id="<%= dish.id %>">
   <div class="header">
     <img class="user image" src="<%= asset_path('icon.png') %>">
     <p class="user">dt</p>
@@ -8,6 +8,7 @@
   </div>
   <div class="dish-image">
     <img src="<%= dish.image_url %>" alt="">
+    <span class="star">&#9733;</span>
   </div>
   <div class="description">
     <h1 class="dish name"><a href="/dishes/<%= dish.id %>"><%= dish.name %></a></h1>
@@ -23,7 +24,7 @@
       <button>Like</button>
       <% end %>
     </p>
-    <p><%= dish.likes.count %></p>
+    <p class="like"><%= dish.likes.count %></p>
   </div>
     <!-- <form action="/dishes" method="post">
       <input type="hidden" name="_method" value="delete">

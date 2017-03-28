@@ -57,3 +57,22 @@ p {
   width: 288px;
   height:190px;
 }
+
+.dish-image {
+  position: relative;
+}
+
+.star {
+  position:absolute;
+  top:0;
+  right: 0;
+  color: white;
+  font-size: 2em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.star:hover {
+  cursor: pointer;
+  color: black;
+}

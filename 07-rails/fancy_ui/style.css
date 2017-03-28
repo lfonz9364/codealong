@@ -1,0 +1,44 @@
+.right {
+  float: right;
+}
+
+.content {
+  padding: 0.8em;
+}
+
+header {
+  line-height: 2em;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.ui-card {
+  float: left;
+  width: 23%;
+  margin: 1%;
+  background-color: mistyrose;
+}
+
+.image {
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+img {
+  width: 288px;
+}

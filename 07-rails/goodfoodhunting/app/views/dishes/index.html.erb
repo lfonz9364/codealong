@@ -3,3 +3,46 @@
 <% @dishes.each do |dish| %>
   <%= render partial: 'dish_card', locals: { dish: dish } %>
 <% end %>
+
+<script>
+// var star = document.querySelectorAll('.star');
+// for (i=0; i < star.length; i++){
+//   star[i].addEventListener('click', function(event) {
+//     var x = event.target;
+//     var content = x.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerHTML;
+//     var number = Number(content);
+//     var likeCount = number + 1 ;
+//     x.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerHTML = String(likeCount);
+//   })
+// }
+var $star = $('.star');
+$star.on('click', function(event) {
+  // var $myTarget = $(event.target)
+  //   .closest('.showcase') //up
+  //   .find('.like'); //down
+  //
+  // var oldText = $myTarget.text();
+  // var oldCount = Number(oldText);
+  // var newCount = oldCount + 1;
+  //
+  // $myTarget.text(newCount);
+  //
+  // var dishId = $(event.target).closest('.showcase').data('id');
+  var $card = $(event.target).closest('.showcase');
+  var dishId = $card.attr('data-id');
+  $.ajax({
+    url: '/api/likes',
+    data: { dish_id: dishId },
+    method: 'post'
+  }).done(function(data){
+    $card.find('.like').text(data.likes_count);
+  });
+
+})
+
+// $.getJSON('', function(){
+// })
+
+
+
+</script>
